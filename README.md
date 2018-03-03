@@ -18,3 +18,11 @@ ___
 ### Required to run:
 
 #### Python 3
+
+#### Pandas library
+
+    pip install pandas
+    
+#### matplotlib library
+
+    pip install matplotlib
