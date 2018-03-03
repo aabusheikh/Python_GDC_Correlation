@@ -47,7 +47,7 @@ def corr_genes(r, g):
                 n = 1
 
                 if g == "all" or g == "" or not g.startswith("E"):
-                    logging.info("TODO: Creating correlation index for all genes in this file ...")
+                    logging.info("Creating correlation index for all genes in this file, this will take a while ...")
                     dt.corr().to_csv("%s_all.txt" % corr_file_path[:-4], sep="\t")
                 else:
                     logging.info("Creating correlation index for gene [%s] with all other genes in this file ..." % g)
@@ -63,7 +63,7 @@ def corr_genes(r, g):
                     with open(corr_file_path, 'w') as out_file:
                         out_file.write("\n".join(out_lines))
 
-                    logging.info("Done.\n")
+                logging.info("Done.\n")
 
             else:
                 logging.error("No integrated (%s) RNA file found for '%s' > '%s'.\n"
