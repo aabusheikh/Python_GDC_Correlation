@@ -54,8 +54,8 @@ def corr_genes(r, g):
 
                     out_lines = ["0\t%s" % g]
                     for gene in gene_names:
-                        logging.info("Processing gene [%s (%s out of %s), in '%s' > '%s'] ..."
-                                     % (gene, n, num_genes, cancer_type, gender))
+                        logging.info("Processing gene (%s out of %s) in '%s' > '%s', gene_name=[%s] ..."
+                                     % (n, num_genes, cancer_type, gender, gene))
                         out_lines.append("%s\t%s" % (gene, corr_gene_pair(dt, g, gene)))
                         n += 1
 
