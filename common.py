@@ -7,6 +7,9 @@ Common code (global variables, functions) that will be used by multiple modules 
 for configuration or functionality
 """
 
+# PTEN code
+PTEN_GENE_CODE = "ENSG00000171862.8"
+
 # RNA counts filename ending pattern
 RNA_FILE_END = "htseq.counts.txt"
 
@@ -18,6 +21,9 @@ NORMALIZED_END = ".normalized.txt"
 
 # combined file name pattern
 INTEGRATED_FNAME = "%s_%s_%s_%s_integrated.txt"
+
+# correlation table file name template/pattern
+CORR_FNAME = "%s_%s_%s_%s_correlation.txt"
 
 # absolute directory path to download files to (recommended if project files are stored in
 # a space-sensitive location such as a cloud drive directory (Dropbox, OneDrive, etc...)

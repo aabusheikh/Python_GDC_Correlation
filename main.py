@@ -27,15 +27,21 @@ def main():
     )
 
     start_time = time.time()
-    logging.info("Starting program ...")
+    logging.info("Starting program ...\n")
+
+    r = False
+    g = cmn.PTEN_GENE_CODE
 
     if "-r" in sys.argv:
-        logging.info("Detected 'raw data' command line argument, program will integrate raw counts (non-normalized).\n")
-        integrate.run(True)    
-    else:
-        logging.warning("No valid command line arguments, program will ignore arguments.\n")
-        integrate.run(False)
-        
+        logging.info("Detected 'raw data' command line argument, program will use integrated raw counts (non-normalized).\n")
+        r = True
+    '''
+    if "-a" in sys.argv:
+        logging.info("Detected 'all genes' commandline argument, will process all genes in files.")
+        g = "all"
+    '''
+
+    plot.run(r, g)
 
     logging.info("Finished running program.")
     run_time = time.time() - start_time
