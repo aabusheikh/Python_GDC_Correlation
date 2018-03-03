@@ -47,8 +47,8 @@ def corr_genes(r, g):
                 n = 1
 
                 if g == "all" or g == "" or not g.startswith("E"):
-                    # TODO
                     logging.info("TODO: Creating correlation index for all genes in this file ...")
+                    dt.corr().to_csv("%s_all.txt" % corr_file_path[:-4], sep="\t")
                 else:
                     logging.info("Creating correlation index for gene [%s] with all other genes in this file ..." % g)
 
