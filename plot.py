@@ -44,7 +44,7 @@ def corr_genes(r, g):
                 dt = df.T
                 gene_names = df.index
                 num_genes = len(gene_names)
-                n = 0
+                n = 1
 
                 if g == "all" or g == "" or not g.startswith("E"):
                     # TODO
