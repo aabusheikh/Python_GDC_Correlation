@@ -1,4 +1,4 @@
-# Python_GDC_Plot
+# Python_GDC_Correlation
 
 Created for CSI4900 - Honours Project
 
