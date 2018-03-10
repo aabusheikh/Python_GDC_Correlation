@@ -1,7 +1,7 @@
 # Copyright (C) 2018  Ahmad A. A. (https://github.com/bbpgrs/)
 
 import common as cmn
-import plot
+import correlate
 import os
 import logging
 import time
@@ -43,7 +43,7 @@ def main():
         g = "all"
     '''
 
-    plot.run(r, g)
+    correlate.run(r, g)
 
     logging.info("Finished running program.")
     run_time = time.time() - start_time
